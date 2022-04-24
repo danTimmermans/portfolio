@@ -1,0 +1,27 @@
+.wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+.about_me{
+    p{
+        color: #fff;
+    }
+    a{
+        color: $orange_theme;
+        text-decoration: none;
+        &:hover{
+            color: $link_hover;
+        }
+
+    }
+}
+.separate_banner{  
+    position: relative;  
+    background: url(../img/hero_js.png) center/cover;
+    height: 60vh;
+    width: 100%;
+}
+.works.title{
+    color: #fff;
+    font-size: 100px;
+}

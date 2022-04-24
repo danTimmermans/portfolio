@@ -1,0 +1,17 @@
+.check_btn{
+    border: 1px solid $orange_theme;
+    border-radius: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    a{
+        padding: 10px;
+        font-size: 30px;
+        display: block;
+        line-height: 1.60;
+
+    }
+    &:hover{
+        border: 1px solid $link_hover;
+    }
+}

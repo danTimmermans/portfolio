@@ -1,0 +1,44 @@
+.navigation_links{
+    height: 20vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a{
+        font-size: 30px;
+        color: $orange_theme;
+        padding: 10px 30px;
+        transition: 0.1s all ease-in-out;
+        text-decoration: none;
+        animation-duration: 2s;
+        animation-name: slidein_a;
+        &:hover{
+            font-size: 32px;
+            color: $link_hover;
+        }
+        &::after{
+          display: block;
+          content: "";
+          width: 0;
+          margin: 0 auto;
+          height: 2px;
+          background-color: $link_hover;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover::after{
+          width: 100%;
+        }
+    }
+}
+@keyframes slidein_a {
+    from {
+      margin-top: -8%;
+ 
+    }
+  
+    to {
+      margin-top: 0%;
+
+    }
+  }

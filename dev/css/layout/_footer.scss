@@ -1,0 +1,16 @@
+.totop{
+    position: fixed;
+    right: 120px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    opacity: 0.5;
+    padding:10px ;
+    border-radius: 5px;
+    i{
+        color: #fff;
+        line-height: 10px;
+        font-size: 25px;
+    }
+}
