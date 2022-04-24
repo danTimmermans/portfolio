@@ -4,11 +4,23 @@
     width: 300px;
     display: flex;
     justify-content: center;
+    align-items: center;
     a{
         padding: 10px;
         font-size: 30px;
         display: block;
-        line-height: 1.60;
+        &::after{
+            display: block;
+            content: "";
+            width: 0;
+            margin: 0 auto;
+            height: 2px;
+            background-color: $link_hover;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover::after{
+            width: 100%;
+          }
 
     }
     &:hover{

@@ -6,22 +6,108 @@
     p{
         color: #fff;
     }
-    a{
-        color: $orange_theme;
-        text-decoration: none;
-        &:hover{
-            color: $link_hover;
-        }
-
     }
-}
+
 .separate_banner{  
     position: relative;  
     background: url(../img/hero_js.png) center/cover;
-    height: 60vh;
+    height: 40vh;
     width: 100%;
 }
 .works.title{
     color: #fff;
     font-size: 100px;
+}
+.works_container{
+    display: grid;
+    grid-template-columns: 2fr  1fr;
+    gap: 2em;
+}
+.works_preview{
+    width: 100%;
+}
+.works_links{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.links_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    div{
+        max-width: 100%;
+        a{
+            display: block;
+            font-size: 30px;
+            &::after{
+                display: block;
+                content: "";
+                width: 0;
+                margin: 0 auto;
+                height: 2px;
+                background-color: $link_hover;
+                transition: all 0.3s ease-in-out;
+              }
+              &:hover::after{
+                width: 100%;
+              }
+        }
+    }
+    p{
+        font-size: 15px;
+        color: #fff;
+    }
+}
+.works_preview{
+    display: block;
+    border: 1px solid $orange_theme;
+    border-radius: 15px;
+    overflow: hidden;
+    .preview{
+        width: 100%;
+        height: 100%; 
+        
+    }
+    .static{
+        background: url("../img/hero_js.png");  
+        transition: all 0.3s ease-in-out; 
+    }
+}
+.work_active_travelista{
+    background: url("../img/travelista.png") center/cover;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+}
+.work_active_marco{
+    background: url("../img/marco.png") center/cover;
+    transition: all 0.3s ease-in-out;
+}
+.work_active_marvel{
+    background: url("../img/marvel.png") center/cover;
+    transition: all 0.3s ease-in-out;
+}
+.totop{
+    position: fixed;
+    right: 120px;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    background: #000;
+    opacity: 0.5;
+    padding:10px ;
+    border-radius: 5px;
+    i{
+        color: #fff;
+        line-height: 10px;
+        font-size: 25px;
+    }
+}
+.info{
+    display: flex;
+    margin-bottom: 40px;
+    a{
+        padding: 20px;
+    }
 }
