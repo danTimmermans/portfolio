@@ -1,3 +1,6 @@
+footer{
+    height: 200px;
+}
 .totop{
     position: fixed;
     right: 120px;
@@ -8,9 +11,33 @@
     opacity: 0.5;
     padding:10px ;
     border-radius: 5px;
+    display: none;
     i{
         color: #fff;
         line-height: 10px;
         font-size: 25px;
+    }
+    @include mobile{
+        right: 70px;
+    }
+}
+.totop_active{
+    display: flex;
+}
+.info{
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    @include mobile{
+        flex-direction: column;
+    }
+    a{
+        padding: 20px;
+        font-size: 25px;
+        @include tablet{
+            padding: 10px;
+            font-size: 18px;
+        }
+
     }
 }

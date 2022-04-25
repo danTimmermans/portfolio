@@ -5,6 +5,16 @@ window.addEventListener("scroll", function(){
 
 })
 
+let totop = document.querySelector(".totop")
+window.addEventListener("scroll", ()=>{
+    if(window.scrollY>500){
+        totop.classList.add("totop_active")
+    }
+    else{
+        totop.classList.remove("totop_active")
+    }
+})
+
 let work_hover_travelista = document.querySelector('.travelista');
 let preview = document.querySelector('.preview');
 
@@ -44,3 +54,17 @@ work_hover_marvel.onmouseover = () => {
 }
 
 
+let burger = document.querySelector(".mini-burger");
+let menuPop = document.querySelector(".menu-pop");
+
+
+burger.addEventListener("click", () =>{
+    menuPop.classList.add("active");
+});
+
+
+let closeMenu = document.querySelector(".close");
+
+closeMenu.addEventListener("click",() =>{
+    menuPop.classList.remove("active");
+})
