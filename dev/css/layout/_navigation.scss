@@ -48,7 +48,7 @@
 
     }
   }
-  .burger{
+.burger{
     position: relative;
     left: 50px;
     top: 50px;
@@ -57,7 +57,10 @@
       display: flex;
     }
   }
-  .mini-burger{
+.burger.active{
+  color: $orange_theme;
+}
+.mini-burger{
     width: 40px;
     height: 40px;
     display: flex;
@@ -79,9 +82,6 @@
   width: 30%;
   background: #000;
   z-index: 20;
-  &.active{
-      left: 0;
-  }
   .menu-pop-links{
       display: flex;
       flex-direction: column;
@@ -102,6 +102,9 @@
         }
     }
   }
+}
+.menu-pop.active{
+  left: 0;
 }
 .close{
   margin-top: 20px;
