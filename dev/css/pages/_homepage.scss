@@ -13,6 +13,9 @@
     background: url("../img/hero_js.png") center/cover;
     height: 40vh;
     width: 100%;
+    @include mobile{
+        height: 20vh;
+    }
 }
 .works.title{
     color: #fff;

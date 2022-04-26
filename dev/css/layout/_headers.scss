@@ -24,6 +24,9 @@
             @include tablet{
               font-size: 63px;
             }
+            @include mobile_2{
+              font-size: 50px;
+            }
         }
         p{
             color: #fff;
@@ -47,7 +50,6 @@
     animation-name: slidein;
     @include mobile{
       animation: none;
-      padding-left: 40px;
     }
     .line{
         width: 49px;

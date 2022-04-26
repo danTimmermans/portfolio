@@ -2,24 +2,31 @@
 // mixin pour media-querry
 
 $mobile:764px;
+$mobile_2:500px;
 $tablet: 900px;
 $lowres : 1500px;
 
 
 @mixin mobile {
-  @media screen and (max-width: $mobile) {
-    @content;
-  }
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
+
+@mixin mobile_2{
+    @media screen and (max-width: $mobile_2) {
+        @content;
+    }
 }
 
 @mixin lowres {
-  @media screen and (max-width: $lowres) {
-    @content;
-  }
+    @media screen and (max-width: $lowres) {
+        @content;
+    }
 }
 
 @mixin tablet {
-  @media screen and (max-width: $tablet) {
-    @content;
-  }
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
 }
