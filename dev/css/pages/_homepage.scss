@@ -10,7 +10,7 @@
 
 .separate_banner{  
     position: relative;  
-    background: url(../img/hero_js.png) center/cover;
+    background: url("../img/hero_js.png") center/cover;
     height: 40vh;
     width: 100%;
 }
@@ -85,21 +85,21 @@
         height: 100%; 
     }
     .static{
-        background: url(../img/hero_js.png);  
+        background: url("../img/hero_js.png");  
         // transition: all 0.3s ease-in-out; 
     }
 }
 .work_active_travelista{
-    background: url(../img/travelista.png) ;
+    background: url("../img/travelista.png") ;
     z-index: 10;
     // transition: all 0.3s ease-in-out;
 }
 .work_active_marco{
-    background: url(../img/marco.png) center/cover no-repeat;
+    background: url("../img/marco.png") center/cover no-repeat;
     // transition: all 0.3s ease-in-out;
 }
 .work_active_marvel{
-    background: url(../img/marvel.png) ;
+    background: url("../img/marvel.png") ;
     // transition: all 0.3s ease-in-out;
 }
 .secondary_title{
