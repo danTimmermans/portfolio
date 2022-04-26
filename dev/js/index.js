@@ -58,9 +58,6 @@ let burger = document.querySelector(".mini-burger");
 let menuPop = document.querySelector(".menu-pop");
 let link = document.querySelectorAll(".pop_links")
 
-// burger.addEventListener("click", () =>{
-//     menuPop.classList.add("active");
-// });
 function hasClick(){
     burger.classList.toggle("active");
     menuPop.classList.toggle("active");

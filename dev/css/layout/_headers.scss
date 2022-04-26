@@ -54,8 +54,7 @@
         height: 5px;
         background-color: $orange_theme;
         @include tablet{
-          width: 29px;
-          height: 3px;
+          display: none;
         }
         @include mobile{
           display: none;
