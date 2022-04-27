@@ -18,7 +18,7 @@ footer{
         font-size: 25px;
     }
     @include mobile{
-        right: 70px;
+        right: 30px;
     }
 }
 .totop_active{
@@ -38,6 +38,8 @@ footer{
             padding: 10px;
             font-size: 18px;
         }
-
+        @include mobile_2{
+            padding: 0px;
+        }
     }
 }
