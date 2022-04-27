@@ -21,12 +21,11 @@ let preview = document.querySelector('.preview');
 
 work_hover_travelista.onmouseover = () => {
     preview.classList.remove('static')
-    preview.classList.add('work_active_travelista');
-    setTimeout(function(){
-        preview.classList.remove('work_active_travelista');
-        preview.classList.add('static');
-    },1500);
-    
+    preview.classList.add('work_active_travelista');    
+}
+work_hover_travelista.onmouseout = () => {
+    preview.classList.remove('work_active_travelista');
+    preview.classList.add('static');
 }
 
 let work_hover_marco = document.querySelector('.marco');
@@ -35,24 +34,22 @@ let work_hover_marco = document.querySelector('.marco');
 work_hover_marco.onmouseover = () => {
     preview.classList.remove('static')
     preview.classList.add('work_active_marco');
-    setTimeout(function(){
-        preview.classList.remove('work_active_marco');
-        preview.classList.add('static');
-    },1500)
 }
-
+work_hover_marco.onmouseout = () => {
+    preview.classList.remove('work_active_marco');
+    preview.classList.add('static');
+}
 let work_hover_marvel = document.querySelector('.marvel');
 
 
 work_hover_marvel.onmouseover = () => {
     preview.classList.remove('static')
     preview.classList.add('work_active_marvel');
-    setTimeout(function(){
-        preview.classList.remove('work_active_marvel');
-        preview.classList.add('static');
-    },1500)
 }
-
+work_hover_marvel.onmouseout = () => {
+    preview.classList.remove('work_active_marvel');
+    preview.classList.add('static');
+}
 
 let burger = document.querySelector(".mini-burger");
 let menuPop = document.querySelector(".menu-pop");
