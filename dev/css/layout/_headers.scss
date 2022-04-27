@@ -2,7 +2,7 @@
     position: relative;
     top: 0;
     left: 0;
-    background: url(../img/portfolio_banner.png) center/cover;
+    background: url("../img/portfolio_banner.png") center/cover;
     height: 100vh;
 
 }
@@ -14,10 +14,8 @@
     flex-direction: column;
     align-items: center;
     @include mobile{
-      // position: relative;
       top: 30%;
       right: 50px;
-      // justify-content: center;
     }
         h1{
             color: $orange_theme;
