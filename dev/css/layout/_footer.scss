@@ -39,7 +39,8 @@ footer{
             font-size: 18px;
         }
         @include mobile_2{
-            padding: 0px;
+            font-size: 16px;
+            padding: 5px 0px;
         }
     }
 }

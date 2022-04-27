@@ -31,6 +31,7 @@
     }
     @include tablet{
         display: flex;
+        flex-direction: column;
     }
 }
 
@@ -51,6 +52,9 @@
             font-size: 30px;
             @include lowres{
                 font-size: 25px;
+            }
+            @include mobile_2{
+                font-size: 20px;
             }
             &::after{
                 display: block;
