@@ -32,8 +32,6 @@
             color: #fff;
             font-size: 40px;
             letter-spacing: 5px;
-            // animation-duration: 2s;
-            // animation-name: slidein_p;
             @include tablet{
               font-size: 30px;
             }
@@ -72,40 +70,5 @@
     to {
       margin-left: 0%;
       width: 100%;
-    }
-  }
-@keyframes slidein_p {
-    from {
-      margin-right: 100%;
-      width: 100%;
-    }
-  
-    to {
-      margin-left: 30%;
-      width: 100%;
-    }
-  }
-  @include tablet{
-    @keyframes slidein {
-      from {
-        margin-left: 100%;
-        width: 100%;
-      }
-    
-      to {
-        margin-left: 0%;
-        width: 100%;
-      }
-    }
-    @keyframes slidein_p {
-      from {
-        margin-right: 100%;
-        width: 100%;
-      }
-    
-      to {
-        margin-left: 17%;
-        width: 100%;
-      }
     }
   }
