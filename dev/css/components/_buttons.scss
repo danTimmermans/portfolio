@@ -5,6 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 8px 10px 10px 10px rgba(179, 179, 212, 0.2);
     @include lowres{
       width: 250px;
     }
